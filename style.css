@@ -1,0 +1,1214 @@
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+/* font style */
+
+.dm-sans-font {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* hero section */
+
+.navbar {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-menu-items {
+    width: 281px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandname {
+    font-size: 27px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.divider {
+    margin-left: 19px;
+}
+
+.divider img {
+    width: 1px;
+    color: #E6E8EC;
+}
+
+.logo-link {
+    list-style-type: none;
+}
+
+.logo-link a {
+    font-size: 14px;
+    color: #777E90;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+}
+
+.hero-content-1 {
+    position: relative;
+    padding-top: 50px;
+}
+
+.hero-content-1 h1 {
+    font-size: 96px;
+    color: #23262F;
+}
+
+.hero-content-1 p {
+    font-size: 24px;
+    color: #23262F;
+}
+
+.hero {
+    width: 100%;
+    height: 936px;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('../images/heroimg.png');
+    width: 1200px;
+    height: 776px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.herobtn {
+    border-radius: 45px;
+    background-color: #3B71FE;
+    color: #FCFCFD;
+    font-size: 16px;
+    padding: 16px 24px 16px 24px;
+    gap: 12px;
+}
+
+.hero-search {
+    background: #FCFCFD;
+    background: linear-gradient(83.59deg, #FCFCFD 83.52%, rgba(252, 252, 253, 0.83) 99.8%);
+    box-shadow: 0px 40px 64px -32px #0F0F0F1A;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 120px;
+    width: 995px;
+}
+
+#myTab {
+    padding: 20px 0;
+}
+
+.hero-search .tab-content {
+    padding: 20px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 785px;
+    height: 48px;
+}
+
+.header-nav a {
+    font-size: 14px;
+    color: #777E90;
+}
+
+.hero-search .form-group {
+    margin-bottom: 0;
+}
+
+.hero-search .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.navbtn {
+    border: 2px solid #E6E8EC;
+    border-radius: 20px;
+    color: black;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar .nav-link {
+    display: inline;
+}
+
+#stays-tab {
+    font-size: 14px;
+    color: #23262F;
+}
+
+#flights-tab {
+    font-size: 14px;
+    color: #777E90;
+}
+
+#cars-tab {
+    font-size: 14px;
+    color: #777E90;
+}
+
+#things-tab {
+    font-size: 14px;
+    color: #777E90;
+}
+
+.heroFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group {
+    display: flex;
+}
+
+.hero-tabh {
+    font-size: 24px;
+    color: #23262F;
+}
+
+.hero-tabp {
+    font-size: 16px;
+    color: #777E90;
+}
+
+.Sbtn {
+    border-radius: 22px;
+    height: 42px;
+    width: 42px;
+    background-color: #3B71FE;
+}
+
+
+/* adventure section */
+
+.adventure-section {
+    /* margin-top: 100px;
+    margin-bottom: 135px;
+    padding-top: 120px; */
+    width: 100%;
+    height: 530px;
+}
+
+.r1 {
+    margin-top: 20px;
+}
+
+.r2 {
+    margin-top: 30px;
+}
+
+.adventure-section h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #23262F;
+}
+
+.adventure-section .para {
+    text-align: center;
+    font-size: 24px;
+    color: #777E90;
+}
+
+.adventure-cards {
+    /* width: 352px;
+    height:192px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.adventure-card {
+    /* width: 136px;
+    height: 82px; */
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: justify; */
+}
+
+.adventure-img {
+    margin-right: 10px;
+}
+
+.adventure-text {
+    width: 136px;
+    align-content: center;
+    padding: 5px;
+}
+
+.adventure-text h5 {
+    font-size: 16px;
+    color: #23262F;
+}
+
+.places {
+    font-size: 12px;
+    color: #353945;
+}
+
+.adventure-card .places {
+    width: 105px;
+    background: #E6E8EC;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.adventure-card img {
+    width: 132px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.adventure-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.adventure-navigation .nav-arrow {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    line-height: 1;
+    padding: 11px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.adventure-navigation .nav-arrow:hover {
+    background: #f1f1f1;
+}
+
+.nav-arrow {
+    width: fit-content;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.content-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    color: #777;
+}
+
+.start-search {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#adventureCarousel .owl-nav {
+    top: 210px;
+    right: 530px;
+}
+
+
+/* about section */
+
+.about {
+    width: 100%;
+    height: 1024px;
+}
+
+#aboutCarousel .owl-nav {
+    top: 0px;
+    right: 40px;
+}
+
+#aboutCarousel2 .owl-nav {
+    top: 0%;
+    right: 40px;
+}
+
+.aboutheader {
+    text-align: center;
+    width: 500px;
+    height: 112px;
+}
+
+.aboutheader h1 {
+    font-size: 48px;
+    color: #23262F;
+}
+
+.aboutheader p {
+    font-size: 20px;
+    color: #777E90;
+}
+
+.aboutmain {
+    padding-top: 100px;
+}
+
+.aboutcontent {
+    position: relative;
+    width: 370px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutcontent img {
+    margin-bottom: 20px;
+}
+
+.aboutcontent h3 {
+    font-size: 24px;
+    color: #23262F;
+}
+
+.aboutcontent p {
+    font-size: 14px;
+    color: #777E90;
+}
+
+.aboutimg {
+    width: 454px;
+    height: 700px;
+    left: 40px;
+    border-radius: 20px;
+}
+
+.frame {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.frame1 {
+    position: absolute;
+    top: 260px;
+    left: -60px;
+}
+
+.frame2 {
+    position: absolute;
+    top: 340px;
+    left: 300px;
+}
+
+.frame3 {
+    position: absolute;
+    top: 495px;
+    left: -120px;
+}
+
+.aboutbtn {
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+/* how it work section */
+
+.imgrow {
+    background-image: url("../images/dash\ line.png");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.how-it-works {
+    text-align: center;
+    width: 100%;
+    height: 574px;
+}
+
+.how-it-work-heading {
+    margin-bottom: 3rem;
+}
+
+.how-it-works h2 {
+    font-size: 48px;
+    color: #23262F;
+}
+
+.how-it-work-p {
+    font-size: 24px;
+    color: #777E90;
+}
+
+.work-step {
+    margin-bottom: 30px;
+}
+
+.work-step h4 {
+    font-size: 24px;
+    color: #23262F;
+    margin-bottom: 10px;
+}
+
+.work-step p {
+    font-size: 14px;
+    color: #777E90;
+    text-align: center;
+}
+
+.category {
+    cursor: pointer;
+}
+
+.shoesimg,
+.shirtsimg,
+.bagsimg,
+.watchesimg,
+.jeansimg {
+    height: 200px;
+    width: auto;
+}
+
+.show-more {
+    display: none;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.searchcat h1 {
+    text-align: center;
+}
+
+.formsection h2 {
+    text-align: center;
+}
+
+
+/* Anas */
+
+
+/* Image grids 01 */
+
+.img-grid-01 {
+    /* width: 100%;
+    height: 884px; */
+    margin-bottom: 50px;
+}
+
+.img-grid-01 h1 {
+    font-size: 48px;
+    color: #23262F;
+}
+
+.img-grid-01 h3 {
+    font-size: 24px;
+    color: #777E90;
+}
+
+.img-grid-01 .card {
+    border: none;
+}
+
+.section-heading {
+    margin-bottom: 3rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 500px;
+}
+
+.img-grid-01 .card-title {
+    font-size: 16px;
+    color: #23262F;
+}
+
+.img-grid-01 .card-text {
+    font-size: 14px;
+    color: #777E90;
+}
+
+.view-all-btn {
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-left: 45%;
+    margin-bottom: 25px;
+}
+
+
+/* Product Card */
+
+.product {
+    background-color: #F4F5F6;
+    border-radius: 2%;
+    max-width: 1200px;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.productnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productnav button {
+    border: none;
+    border-radius: 25px;
+}
+
+.subnav:hover {
+    text-decoration: none;
+    color: #777E90;
+    line-height: 39px;
+}
+
+.subnav {
+    text-decoration: none;
+    color: #777E90;
+    line-height: 39px;
+    margin-left: 15px;
+    gap: 16px;
+}
+
+.first {
+    background: #353945;
+    border-radius: 100px;
+    color: #FCFCFD;
+    margin-left: 0px;
+    padding: 5px;
+}
+
+.first:hover {
+    background: #353945;
+    border-radius: 100px;
+    color: #FCFCFD;
+}
+
+.subnav img {
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown {
+    color: black;
+    margin-left: 400px;
+}
+
+.cardp {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cardp img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-bodyp {
+    padding: 1rem;
+    background-color: #FCFCFD;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.title-location-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.card-titlep {
+    font-size: 16px;
+    color: #141416;
+}
+
+.card-textp {
+    font-size: 12px;
+    color: #353945;
+}
+
+.advcard-text {
+    font-size: 12px;
+    color: #777E90;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advcard-text span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: #23262F;
+}
+
+.price-box {
+    text-align: right;
+    flex-shrink: 0;
+    border: 2px solid #58c27d;
+    border-radius: 7px;
+    padding: 8px 8px 6px 8px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #b1b5c3;
+    margin: 0;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    color: #58c27d;
+}
+
+.rating {
+    color: #23262f;
+    font-weight: bold;
+    align-items: center;
+}
+
+.rating i {
+    color: #ffd166;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.get-app {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* get-app */
+
+.get-app h5 {
+    font-size: 12px;
+    color: #777E90;
+}
+
+.get-app h1 {
+    font-size: 48px;
+    color: #23262F;
+}
+
+.get-app p {
+    font-size: 16px;
+    color: #777E90;
+}
+
+.get_search input {
+    border-radius: 25px;
+    padding: 23px 20px;
+    width: 255px;
+}
+
+
+/* .get-app img {
+    width: 100%;
+    height: 300px;
+} */
+
+.get_search button {
+    border-radius: 25px;
+    margin-left: -45px;
+    margin-top: 4px;
+    width: 38px;
+    height: 38px;
+}
+
+
+/* Property Type */
+
+.card-custom {
+    border: none;
+    border-radius: 24px;
+    border: 1px solid #E6E8EC;
+}
+
+.card-custom img {
+    width: 256px;
+    height: 256px;
+    border-radius: 24px;
+}
+
+.rating-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #23262F;
+    color: #FCFCFD;
+    padding: 5px 10px;
+    border-radius: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.property-rating {
+    background-color: #23262F;
+    color: #FCFCFD;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    border-radius: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.rating-badge .star {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
+.card-body-custom {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.homecard {
+    display: flex;
+    font-size: 12px;
+}
+
+
+/* Explore */
+
+.exploreC {
+    background-color: #F4F5F6;
+    width: 1200px;
+    border-radius: 30px;
+    padding: 80px 20px;
+}
+
+#heading {
+    font-size: 48px;
+    text-align: center;
+    color: #23262F;
+}
+
+.Esub {
+    text-align: center;
+    font-size: 24px;
+    color: #777E90;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreC .row {
+    margin: 50px 0px;
+}
+
+.colE {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    flex-grow: 0;
+    margin: 6px;
+}
+
+.cardE {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.Etop {
+    width: 50px;
+    font-size: 12px;
+    background-color: #F4F5F6;
+    text-align: left;
+    color: #777E90;
+    border-radius: 25px;
+    padding-left: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.smallimg {
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.Etitile {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #23262F;
+}
+
+.Etext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #777E90;
+}
+
+.hosth1 {
+    font-size: 48px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Best host  */
+
+.hostsection {
+    width: 100%;
+    height: 570px;
+    padding: 56px 160px 136px 160px;
+}
+
+.head h1 {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.head span {
+    color: #3B71FE;
+}
+
+.card-custom {
+    border-radius: 24px;
+    border: 1px solid #E6E8EC;
+}
+
+.card-custom img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.rating-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.rating-badge .star {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 38%;
+    width: 65px;
+    height: 65px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-body-custom {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.card-body-custom .card-title {
+    font-size: 16px;
+    color: #23262F;
+}
+
+.card-body-custom .card-text {
+    font-size: 12px;
+    color: #777E90;
+}
+
+.card-body-custom .rating-badge {
+    font-size: 12px;
+    color: #23262F;
+}
+
+
+/* book */
+
+.book-section {
+    width: 100%;
+    height: 900px;
+}
+
+.book {
+    margin-bottom: 50px;
+}
+
+.bookt {
+    font-size: 12px;
+    color: #777E90;
+}
+
+.bookh1 {
+    font-size: 48px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #23262F;
+}
+
+.bookimg {
+    position: relative;
+}
+
+.bookimg img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.bookimg i {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 47%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+    color: black;
+}
+
+.bookimg i:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* browse by category */
+
+.category {
+    width: 100%;
+    height: 500px;
+    padding: 0px, 0px 136px 160px;
+    /* padding: 50px; */
+}
+
+.category-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#categoryCarousel .owl-nav {
+    top: 250px;
+    right: 500px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.footer .row {
+    margin: 30px 0;
+}
+
+.footer-logo h2 {
+    align-content: center;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 20px;
+}
+
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-subscribe input {
+    border-radius: 50px;
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    width: 250px;
+}
+
+.footer-subscribe button {
+    border-radius: 20px;
+    margin-left: -50px;
+    width: 38px;
+    height: 38px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+.owl-theme .owl-dots {
+    margin-top: 20px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -28%;
+    right: 0px;
+}
+
+.owl-nav button {
+    height: 40px;
+    width: 40px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    border-radius: 30px;
+}
+
+.owl-nav button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.owl-carousel .owl-nav.disabled {
+    display: block;
+    /* top: 0px;
+    left: 0px;*/
+}
+
+.owl-carousel .owl-dots.disabled {
+    display: block;
+    /* position: absolute; */
+}

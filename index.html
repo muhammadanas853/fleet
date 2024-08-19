@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Travelers</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header start-->
+    <div class="header-section">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar">
+                    <div class="logo-menu-items">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="Logo" style="height: 40px;">
+                        </a>
+                        <div id="brandname">
+                            <h3>fleet</h3>
+                        </div>
+
+                        <div class="divider">
+                            <img src="images/divider.png" alt="">
+                        </div>
+
+                        <li class="logo-link">
+                            <a class="nav-link dm-sans-font" href="#">Travelers
+                                <span class="caret">
+                                    <img src="images/navicon.svg" alt="">
+                                </span>
+                            </a>
+                        </li>
+
+                    </div>
+
+                    <div class="header-nav" id="navbarNav">
+                        <a class="nav-link dm-sans-font" href="#">Support</a>
+                        <a class="nav-link dm-sans-font" href="#"><span class="caret"><img src="images/language.svg"
+                                    alt=""></span> Language
+                        </a>
+
+                        <button class="btn btn-outline-secondary navbtn dm-sans-font" type="button">List your property</button>
+                        <a href="#"><img src="images/bell-icon.svg" alt=""></a>
+                        <div class="avatar">
+                            <a class="nav-link " href="#">
+                                <img src="images/avatar.png" alt="Profile" class="rounded-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="hero">
+                        <div class="hero-section">
+                            <div class="hero-content">
+                                <div class="hero-content-1 ">
+                                    <h1 class="dm-sans-font">Air, sleep,<br> dream</h1>
+                                    <p class="poppins-regular">Find and book a great experience.</p>
+                                    <button class="btn btn-primary dm-sans-font mb-4 herobtn">Start your search</button>
+                                </div>
+
+                                <div class="hero-search">
+                                    <ul class="nav nav-tabs " id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active dm-sans-font" id="stays-tab" data-toggle="tab" href="#stays" role="tab" aria-controls="stays" aria-selected="true">Stays</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dm-sans-font" id="flights-tab" data-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="false">Flights</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dm-sans-font" id="cars-tab" data-toggle="tab" href="#cars" role="tab" aria-controls="cars" aria-selected="false">Cars</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dm-sans-font" id="things-tab" data-toggle="tab" href="#things" role="tab" aria-controls="things" aria-selected="false">Things to do</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="stays" role="tabpanel" aria-labelledby="stays-tab">
+                                            <div class="heroFrame">
+                                                <div class="group mx-1">
+                                                    <div class="icon mr-2"><img src="images/heroloc.svg" alt=""></div>
+                                                    <div>
+                                                        <div class="poppins-semibold hero-tabh">Location</div>
+                                                        <div class="poppins-regular hero-tabp">Where are you going?</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="group mx-1">
+                                                    <div class="icon mr-2"><img src="images/herocheckin.svg" alt=""></div>
+                                                    <div>
+                                                        <div class="poppins-semibold hero-tabh">Check in</div>
+                                                        <div class="poppins-regular hero-tabp">Add date</div>
+                                                    </div>
+                                                </div>
+                                                <div class="group mx-1">
+                                                    <div class="icon mr-2"><img src="images/herocheckin.svg" alt=""></div>
+                                                    <div>
+                                                        <div class="poppins-semibold hero-tabh">Check out</div>
+                                                        <div class="poppins-regular hero-tabp">Add date</div>
+                                                    </div>
+                                                </div>
+                                                <div class="group mx-1">
+                                                    <div class="icon mr-2"><img src="images/heroTraveler.svg" alt=""></div>
+                                                    <div>
+                                                        <div class="poppins-semibold hero-tabh">Travelers</div>
+                                                        <div class="poppins-regular hero-tabp">Add guests</div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary mx-2 Sbtn"><i class="fas fa-search"></i></button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header end -->
+
+    <!-- Adventure start -->
+    <section class="adventure-section">
+        <div class="container">
+            <div class="row r1">
+                <div class="col">
+                    <h2 class="dm-sans-font">Let's go on an adventure</h2>
+                    <p class="poppins-regular para">Find and book a great experience.</p>
+                </div>
+            </div>
+
+            <div class="row r2">
+                <div class="col">
+                    <div id="adventureCarousel" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="row-4">
+                                <div class="adventure-card">
+                                    <div class="adventure-img">
+                                        <img src="images/adventure1.png" alt="Icon 1">
+                                    </div>
+                                    <div class="adventure-text">
+                                        <h5 class="poppins-medium">Luxury resort at the sea</h5>
+                                        <div class="poppins-bold places">9,326 Places</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row-4">
+                                <div class="adventure-card">
+                                    <div class="adventure-img">
+                                        <img src="images/adventure2.png" alt="Icon 1">
+                                    </div>
+
+                                    <div class="adventure-text">
+                                        <h5 class="poppins-medium">Camping amidst the wild</h5>
+                                        <p class="poppins-bold places">9,326 Places</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row-4">
+                                <div class="adventure-card">
+                                    <div class="adventure-img">
+                                        <img src="images/adventure3.png" alt="Icon 1">
+                                    </div>
+
+                                    <div class="adventure-text">
+                                        <h5 class="poppins-medium">Luxury resort at the sea</h5>
+                                        <div class="poppins-bold places">9,326 Places</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Adventure end -->
+
+    <!-- About start -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 aboutheader">
+                    <h1 class="dm-sans-font">Travel to make memories all around the world </h1>
+                    <p class="poppins-regular">Find trips that fit a flexible lifestyle</p>
+                </div>
+            </div>
+            <div class="row aboutmain">
+                <div class="col-6 aboutcontent">
+                    <img src="images/Frame1.png" />
+                    <h3 class="poppins-semibold">Find trips that fit a flexible lifestyle</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+                    <br>
+                    <img src="images/Frame2.png" />
+                    <h3 class="poppins-semibold">Travel with more Confidence</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+
+                    <br>
+                    <img src="images/Frame3.png" />
+                    <h3 class="poppins-semibold">See What really included</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+                    <button type="button" class="btn btn-primary aboutbtn">Start Your Search</button>
+
+                </div>
+
+
+                <div class="col-lg-6 aboutimg">
+                    <div id="aboutCarousel" class="owl-carousel owl-theme ">
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+
+                        </div>
+
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+                        </div>
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About end -->
+
+    <!-- About start -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 aboutheader">
+                    <h1 class="dm-sans-font">Travel to make memories all around the world </h1>
+                    <p class="poppins-regular">Find trips that fit a flexible lifestyle</p>
+                </div>
+            </div>
+            <div class="row aboutmain">
+                <div class="col-6 aboutimg">
+                    <div id="aboutCarousel2" class="owl-carousel owl-theme ">
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+
+                        </div>
+
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+                        </div>
+                        <div class="item">
+                            <img class="aboutimg" src="images/patrick-jansen1.svg" alt="error" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 aboutcontent p-5">
+                    <img src="images/Frame1.png" />
+                    <h3 class="poppins-semibold">Find trips that fit a flexible lifestyle</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+                    <br>
+                    <img src="images/Frame2.png" />
+                    <h3 class="poppins-semibold">Travel with more Confidence</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+
+                    <br>
+                    <img src="images/Frame3.png" />
+                    <h3 class="poppins-semibold">See What really included</h3>
+                    <p class="poppins-regular">Stacks is a production-ready library of stackable content blocks built in React Native
+                    </p>
+                    <button type="button" class="btn btn-primary aboutbtn">Start Your Search</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- About end -->
+
+    <!-- How it work start -->
+    <div class="how-it-works">
+        <div class="container">
+            <div class="how-it-works-heading">
+                <h2 class="dm-sans-font">How it works</h2>
+                <p class="how-it-work-p">Keep calm & travel on</p>
+            </div>
+            <div class="container">
+                <div class="row imgrow">
+                    <div class="col-md-4 work-step">
+                        <img src="images/iconbox1.png" alt="Book & relax icon">
+                        <h4 class="poppins-semibold">Book & relax</h4>
+                        <p class="poppins-medium">We realize ideas from simple to complex, everything becomes easy to use.</p>
+                    </div>
+                    <div class="col-md-4 work-step">
+                        <img src="images/iconbox2.png" alt="Smart checklist icon">
+                        <h4>Smart checklist</h4>
+                        <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+                    </div>
+                    <div class="col-md-4 work-step">
+                        <img src="images/iconbox3.png" alt="Save more icon">
+                        <h4>Save more</h4>
+                        <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- How it work end -->
+
+
+    <!--Image grids 01 start -->
+    <section class=" img-grid-01">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h1 class="dm-sans-font">Live anywhere</h1>
+                <h3 class="poppins-regular">Keep calm & travel on</h3>
+            </div>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card text-center" id="d1">
+                        <img class="card-img-top" src="images/LiveC1.png" alt="Image Container 1" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Enjoy the great cold</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center" id="d2">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC2.png" alt="Image Container 2" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Pick up the earliest sunrise</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center" id="d3">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC3.png" alt="Image Container 3" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Unique stay</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- displayhide -->
+            <div class="row" id="row2">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC1.png" alt="Image Container 1" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Enjoy the great cold</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC2.png" alt="Image Container 2" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Pick up the earliest sunrise</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC3.png" alt="Image Container 3" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Unique stay</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- displayhide -->
+            <div class="row" id="row3">
+                <div class="card-deck">
+                    <div class="card text-center poppins-medium">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC1.png" alt="Image Container 1" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title">Enjoy the great cold</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC2.png" alt="Image Container 2" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Pick up the earliest sunrise</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top d-block mx-auto" src="images/LiveC3.png" alt="Image Container 3" style="width: 352px; height: 440px" />
+                        <div class="card-body">
+                            <h5 class="card-title poppins-medium">Unique stay</h5>
+                            <p class="card-text">
+                                <small class="poppins-regular">6,879 properties</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-btn" id="loadmore">Load More</button>
+        </div>
+    </section>
+    <!-- Image grids 01 end -->
+
+    <!-- Product card start -->
+    <section>
+        <div class="container product py-5">
+            <div class="section-heading">
+                <h1>Go somewhere</h1>
+                <h3>Let's go on an adventure</h3>
+            </div>
+            <div class="productnav mb-4">
+
+                <button id="product_show_all" class="subnav first"> <img src="images/Coin.png" alt="Coin"> Explore features </button>
+                <button id="product_show_3" class="subnav"><img src="images/Coin.png" alt="Coin">Family Friendly</button>
+                <button id="product_show_4" class="subnav"><img src="images/Coin.png" alt="Coin">On Sale</button>
+                <button id="product_show_5" class="subnav"><img src="images/Coin.png" alt="Coin">Sub Now</button>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Recently Added</button>
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="row" id="p1">
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp" id="ProductC1">
+                            <img src="images/ProductC1.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Karineside</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp" id="ProductC2">
+                            <img src="images/ProductC2.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">East Barrett</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp" id="ProductC3">
+                            <img src="images/ProductC3.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp" id="ProductC4">
+                            <img src="images/ProductC4.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Idaview</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards 5 to 8 in another row -->
+                <div class="row" id="p2">
+                    <!-- Card 5 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp" id="ProductC5">
+                            <img src="images/ProductC5.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Yasminfurt</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-3 mb-4" id="ProductC6">
+                        <div class="cardp">
+                            <img src="images/ProductC6.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">North Edenshire</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col-md-3 mb-4" id="ProductC7">
+                        <div class="cardp">
+                            <img src="images/ProductC7.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Archibaldtown</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-md-3 mb-4" id="ProductC8">
+                        <div class="cardp">
+                            <img src="images/ProductC8.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">West Gregoria</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="p3">
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC1.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">East Barrett</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC2.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC3.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC4.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards 5 to 8 in another row -->
+                <div class="row" id="p4">
+                    <!-- Card 5 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC5.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC6.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC7.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="cardp">
+                            <img src="images/ProductC8.png" class="card-img-top" alt="Resort Image" />
+                            <div class="card-bodyp">
+                                <div class="title-location-price-wrapper">
+                                    <div class="title-location">
+                                        <h5 class="card-titlep poppins-medium ">The grand resort</h5>
+                                        <p class="card-textp poppins-regular">Steuberybury</p>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="old-price">$356</p>
+                                        <p class="price">$267</p>
+                                    </div>
+                                </div>
+                                <p class="advcard-text poppins-regular">Tue, Jul 20 - Fri, Jul 23
+                                    <span class="rating"> <i class="fas fa-star"></i>4.8
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-btn" id="view">View all</button>
+        </div>
+    </section>
+    <!-- Product Card end -->
+
+    <!-- Get the App start-->
+    <section>
+        <div class="container get-app">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase poppins-bold">Supercharge your planning powers</h5>
+                    <h1 class="dm-sans-font">
+                        Travel to make memories all around the world
+                    </h1>
+                    <p class="poppins-regular">
+                        Stacks is a production-ready library of stackable content blocks built in React Native.
+                    </p>
+                    <form class="d-flex get_search">
+                        <input type="text" class="form-control me-2" placeholder="Enter your phone number" />
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/Phone Mockup.png" class="img" alt="Phone Mockup" />
+                </div>
+            </div>
+    </section>
+    <!-- Get the App end-->
+
+    <!-- Property Type start -->
+    <section>
+        <div class="container py-5">
+            <div class="section-heading">
+                <h1>
+                    Browse by property type
+                </h1>
+                <h3 class="text-muted">Let’s go on an adventure</h3>
+            </div>
+            <div id="Property" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC7.png" class="card-img-top" alt="Card 1" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC8.png" class="card-img-top" alt="Card 2" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC7.png" class="card-img-top" alt="Card 1" />
+                        <div class=" property-rating">FORM $230</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC8.png" class="card-img-top" alt="Card 2" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC7.png" class="card-img-top" alt="Card 1" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC8.png" class="card-img-top" alt="Card 2" />
+                        <div class=" property-rating">FORM $230</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC7.png" class="card-img-top" alt="Card 1" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/ProductC8.png" class="card-img-top" alt="Card 2" />
+                        <div class=" property-rating">20% OFF</div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title text-left">Nature house</h5>
+                            <p class="card-text text-muted text-left homecard"><img src="images/Home.png" alt="Home" style="width: 16px; height: 16px;">650,596</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Property Type end -->
+
+
+    <!--Explore section start -->
+
+    <section class="explore py-5">
+        <div class="container exploreC">
+            <h1 id="heading" class="dm-sans-font">Explore nearby</h1>
+            <p class="poppins-regular Esub">10,789 beautiful places to go</p>
+
+            <div class="row">
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img1.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title  poppins-medium Etitile">Thompsonbury</h5>
+                            <small class="Etext">15 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img2.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">Hudsontown</h5>
+                            <small class="text-muted Etext">2 hours drive</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img3.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">Lake Marcelle</h5>
+                            <small class="text-muted Etext">15 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img1.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">New Keagan</h5>
+                            <small class="text-muted Etext">2 hours drive</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img5.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">MacGyverton</h5>
+                            <small class="text-muted Etext">15 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img6.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">North Justen</h5>
+                            <small class="text-muted Etext">2 hours drive</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img7.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">Port Elyseberg</h5>
+                            <small class="text-muted Etext">15 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img8.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">Danielmouth</h5>
+                            <small class="text-muted Etext">2 hours drive</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col colE">
+                    <div class="card cardE">
+                        <div class="poppins-bold Etop">1480</div>
+                        <img src="images/img9.png" class="card-img-top smallimg " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title Etitile">Russelville</h5>
+                            <small class="text-muted Etext">15 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--Explore section end-->
+
+
+    <!--Best host start-->
+    <section class="hostsection">
+        <div class="container py-4">
+            <div class="head">
+                <h1 class="hosth1">Best host of the <span>month <i class="fa-solid fa-angle-down"></i></span> </h1>
+            </div>
+
+            <div id="bestHostCarousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c1.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.9
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p1.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Antone Heller</h5>
+                            <p class="card-text poppins-regular">Gaylordside</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c2.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.9
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p2.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Antone Heller</h5>
+                            <p class="card-text poppins-regular">Gaylordside</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c3.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.9
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p3.png" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Antone Heller</h5>
+                            <p class="card-text poppins-regular">Gaylordside</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c4.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.9
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p4.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Antone Heller</h5>
+                            <p class="card-text poppins-regular">Gaylordside</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c1.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.8
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p1.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Carlos Lima</h5>
+                            <p class="card-text poppins-regular">Old Town</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c2.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.7
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p2.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Emma Stone</h5>
+                            <p class="card-text poppins-regular">East Side</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c3.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.6
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p3.png" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Liam Neeson</h5>
+                            <p class="card-text poppins-regular">West End</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-custom">
+                        <img src="images/c4.jpeg" class="card-img-top" alt="...">
+                        <div class="rating-badge poppins-semibold">
+                            <span class="star">★</span> 4.5
+                        </div>
+                        <div class="profile-pic">
+                            <img src="images/p4.jpeg" alt="Profile Picture">
+                        </div>
+                        <div class="card-body card-body-custom">
+                            <h5 class="card-title poppins-medium">Sophia Turner</h5>
+                            <p class="card-text poppins-regular">South Bay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Best host end-->
+
+
+    <!--Book start-->
+    <section class="book-section">
+        <div class="container">
+            <div class="row book">
+                <div class="col-6">
+                    <p class="title poppins-bold bookt">FLEET TRAVEL UI KIT</p>
+                    <h1 class="bookh1">Book a ticket</h1>
+                    <h1 class="bookh1">and just leave</h1>
+                </div>
+                <div class="col-6 d-flex justify-content-lg-end ">
+                    <button class="btn btn-primary rounded-pill">Book now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bookimg">
+                    <!-- <a href="https://www.youtube.com/embed/mNzenfB3OuY"><img src="images/video2.png"></a> -->
+                    <img src="images/video3.png" alt="img">
+                    <div class="icon">
+                        <a href="#"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Book end-->
+
+    <!--Browse by category start-->
+    <section class="category">
+        <div class="container py-5">
+            <h2 class="text-center bookh1">Browse by category</h2>
+            <p class="text-center text-muted para">Let's go on an adventure</p>
+            <div id="categoryCarousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="category-card">
+                        <div>256,356</div>
+                        <div>
+                            <i class="fas fa-building fa-2x my-3"></i>
+                        </div>
+                        <h5 class="Etitile">City house</h5>
+                        <p class="Etext">Small description</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="category-card">
+                        <div>256,356</div>
+                        <div>
+                            <i class="fas fa-building fa-2x my-3"></i>
+                        </div>
+                        <h5 class="Etitile">City house</h5>
+                        <p class="Etext">Small description</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="category-card">
+                        <div>256,356</div>
+                        <div>
+                            <i class="fas fa-building fa-2x my-3"></i>
+                        </div>
+                        <h5 class="Etitile">City house</h5>
+                        <p class="Etext">Small description</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="category-card">
+                        <div>256,356</div>
+                        <div>
+                            <i class="fas fa-building fa-2x my-3"></i>
+                        </div>
+                        <h5 class="Etitile">City house</h5>
+                        <p class="Etext">Small description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Browse by category end-->
+
+    <!--Footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-logo d-flex ">
+                    <img src="images/logo.png" alt="Fleet Logo">
+                    <h2>fleet</h2>
+                </div>
+                <div class="col-md-6 text-center footer-links">
+                    <div class="row">
+                        <div class="col">
+                            <li><a id="about" href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </div>
+
+                        <div class="col">
+                            <li><a href="#">What We Do</a></li>
+                            <li><a href="#">Press</a></li>
+                        </div>
+
+                        <div class="col">
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Download</a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-end footer-subscribe">
+                    <p>JOIN OUR COMMUNITY <span>🔥</span></p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-left">
+                <p>Copyright &copy; 2021 UIB LLC. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
